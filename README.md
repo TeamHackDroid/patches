@@ -1,7 +1,7 @@
 Patches
 =======
 
-This patch is allow us to fix CameraHAL error during compilatio CM-10.1, i am not sure if this one is working on the newer CM, so you should try it.
+This patch is allow us to fix CameraHAL error during compilation of CM-10.1, i am not sure if this one is working on the newer CM, so you should try it.
 
 
 How to apply the Patch
