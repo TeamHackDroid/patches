@@ -1,0 +1,38 @@
+#!/bin/bash
+DIR=$(cd $(dirname "$0"); pwd)
+tput setaf 4
+echo "================================================================================"
+echo "                               Syncing repo"
+echo "================================================================================"
+tput sgr0
+echo ""
+echo ""
+echo ""
+repo sync
+echo ""
+echo ""
+echo ""
+tput setaf 4
+echo "================================================================================"
+echo "                       Merging changes in working tree"
+echo "================================================================================"
+echo ""
+echo ""
+echo ""
+echo "################################"
+echo "         Camera Support         "
+echo "################################"
+tput sgr0
+echo ""
+echo ""
+echo ""
+cd $DIR/frameworks/native
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/75/34375/1 && git cherry-pick FETCH_HEAD
+echo ""
+echo ""
+echo ""
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/76/34376/1 && git cherry-pick FETCH_HEAD
+echo ""
+echo ""
+echo ""
+read opt
